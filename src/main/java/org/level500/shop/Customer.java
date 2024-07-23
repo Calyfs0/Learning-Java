@@ -37,8 +37,8 @@ public class Customer {
         this.interests = interests;
     }
 
-    public Address getAddress() {
-        return address;
+    public String getAddress() {
+        return address.getNumber() + "-" + address.getStreet();
     }
 
     public void setAddress(Address address) {
