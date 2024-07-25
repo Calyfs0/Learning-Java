@@ -24,7 +24,7 @@ public class FirstJavaApp {
         vipCustomer.setAddress(sagarAddress);
 
         //Printing the information
-        System.out.println(vipCustomer.getName() + " loves " + vipCustomer.getInterests().getFirst());
+        System.out.println(vipCustomer.getName() + " loves " + vipCustomer.getInterests().get(0));
         System.out.println(vipCustomer.getName() + " lives at " + vipCustomer.getAddress());
         vipCustomer.returnItems("Hard disk");
 
@@ -41,7 +41,7 @@ public class FirstJavaApp {
         customer.setAddress(chitraAddress);
 
         //Printing the information
-        System.out.println(customer.getName() + " loves " + customer.getInterests().getFirst());
+        System.out.println(customer.getName() + " loves " + customer.getInterests().get(0));
         System.out.println(customer.getName() + " lives at " + customer.getAddress());
         customer.returnItems("Rice");
 
@@ -54,7 +54,7 @@ public class FirstJavaApp {
         Customer anotherCustomer = new Customer("Sapna", Collections.singletonList("Cleaning"), sapnaAddress);
 
         //Printing the information
-        System.out.println(anotherCustomer.getName() + " loves " + anotherCustomer.getInterests().getFirst());
+        System.out.println(anotherCustomer.getName() + " loves " + anotherCustomer.getInterests().get(0));
         System.out.println(anotherCustomer.getName() + " lives at " + anotherCustomer.getAddress());
         anotherCustomer.returnItems("Mop");
 
