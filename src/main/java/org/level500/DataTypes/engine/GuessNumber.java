@@ -12,7 +12,7 @@ public class GuessNumber {
             throw new IllegalArgumentException("Unfair number of tries. Choose a value between 1 and 10");
         }
         setNumberOfTries(numberOfTries);
-        setGuessNumber(guessNumber);
+        setGuessNumber();
     }
 
     public String play(){
@@ -45,7 +45,7 @@ public class GuessNumber {
         return guessNumber;
     }
 
-    private void setGuessNumber(int guessNumber) {
+    private void setGuessNumber() {
         this.guessNumber = RandomNumberGenerator.getRandomNumber();
     }
 }
